@@ -15,6 +15,7 @@ class Sample{
 			System.out.println("Bye"); 
 		}
 
+		System.out.println("This is only in new branch"); 
 	}
 
 }
