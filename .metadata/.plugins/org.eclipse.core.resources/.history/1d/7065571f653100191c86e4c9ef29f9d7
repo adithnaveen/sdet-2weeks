@@ -1,0 +1,37 @@
+package com.training.selenium.dao;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.training.selenium.beans.UserDetails;
+import com.training.selenium.connection.GetConnection;
+
+public class UserDetailsDAO implements IUserDetails {
+
+	@Override
+	public List<UserDetails> getAllUsers() {
+		System.out.println("in get all customers");
+		String sql = "select username, password from userdetails";
+
+		List<UserDetails> list = null;
+		try {
+			list = new ArrayList<>();
+			GetConnection gc = new GetConnection();
+			gc.rs1 = GetConnection.getOracleConnection().prepareStatement(sql).executeQuery();
+
+			while (gc.rs1.next()) {
+				UserDetails userDetail = new UserDetails();
+				userDetail.setUserName(gc.rs1.getString(1));
+				userDetail.setPassword(gc.rs1.getString(2));
+
+				list.add(userDetail);
+
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+}

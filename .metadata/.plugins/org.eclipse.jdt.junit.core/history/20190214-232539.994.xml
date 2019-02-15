@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DatePickerTest" project="SeleniumWorks" tests="3" started="3" failures="0" errors="0" ignored="2">
+  <testsuite name="com.training.selenium.datepicker.DatePickerTest" time="37.948">
+    <testcase name="partialTextTest" classname="com.training.selenium.datepicker.DatePickerTest" time="37.946"/>
+    <testcase name="sampleItenary" classname="com.training.selenium.datepicker.DatePickerTest" time="0.0" ignored="true"/>
+    <testcase name="datePickerValidTest" classname="com.training.selenium.datepicker.DatePickerTest" time="0.002" ignored="true"/>
+  </testsuite>
+</testrun>

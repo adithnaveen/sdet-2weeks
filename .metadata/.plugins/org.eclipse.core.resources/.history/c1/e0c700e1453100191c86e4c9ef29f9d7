@@ -1,0 +1,8 @@
+package com.training.steps;
+
+public class CreditScoreBackground {
+	
+	public void the browser is open() {
+		System.out.println("the browser is open ******");
+	}
+}

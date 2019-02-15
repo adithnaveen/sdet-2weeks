@@ -1,0 +1,7 @@
+package com.db.connection;
+
+import java.sql.Connection;
+
+public class GetConnection {
+	public static Connection conn; 
+}

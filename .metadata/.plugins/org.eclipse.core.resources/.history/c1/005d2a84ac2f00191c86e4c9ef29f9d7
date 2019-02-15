@@ -1,0 +1,24 @@
+package com.training.generics;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class GenericMethods {
+	private WebDriver driver ;
+	
+	public GenericMethods(WebDriver driver) {
+		this.driver = driver; 
+	}
+	
+
+	/**
+	 * 
+	 * @param locator
+	 * @param type
+	 * @see 
+	 */
+	public WebElement getElement(String locator, String type) {
+		
+	}
+	
+}

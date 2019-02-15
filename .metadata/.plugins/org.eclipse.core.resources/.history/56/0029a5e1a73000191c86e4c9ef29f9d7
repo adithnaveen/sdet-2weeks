@@ -1,0 +1,26 @@
+package com.training.steps;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+/**
+ * 
+ * 
+	Scenario: 
+		Given the username and password 
+		And the SSN number 		 
+		When the credit score of user is 450 
+		Then keep the loan on hold 
+	
+ *
+ */
+public class CreditScoreStep {
+
+	
+}
+
+
+
+

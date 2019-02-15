@@ -1,0 +1,6 @@
+package com.db.interfaces;
+
+public interface ICustomerDAO {
+	public boolean insertCustomer(Customer customer); 
+	
+}

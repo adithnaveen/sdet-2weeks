@@ -1,0 +1,10 @@
+package com.db.entity;
+
+public class Customer {
+	private int custId; 
+	private String custName; 
+	private double custIncome; 
+	private String custEmail; 
+	
+	
+}

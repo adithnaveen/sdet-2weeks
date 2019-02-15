@@ -1,0 +1,5 @@
+package com.training.day2.interfaces;
+
+public class Cube extends Rectangle implements IShape{
+	
+}

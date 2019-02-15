@@ -1,0 +1,12 @@
+@LoginTag 
+
+Feature:  to validate login credentials 
+
+
+Background: 
+	Given the browser chrome is open 
+
+Scenario: 
+	Given 
+	When 
+	Then 

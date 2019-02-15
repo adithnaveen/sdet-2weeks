@@ -1,0 +1,40 @@
+package com.training.selenium.generics;
+
+import static org.junit.Assert.*;
+import static com.training.utilities.Basics.sleep;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+import com.training.generics.GenericMethods;
+import com.training.utilities.Driver;
+import com.training.utilities.DriverFactory;
+import com.training.utilities.DriverNames;
+
+public class BKITest {
+
+	private String baseUrl =""; 
+	private WebDriver driver; 
+	private GenericMethods genericMethods;
+	
+	
+	@Before
+	public void setUp() {
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		genericMethods = new GenericMethods(driver); 
+	}
+	@After
+	public void tearDown() {
+		sleep(3000); 
+		driver.close();
+	}
+	@Test
+	public void bkiTest() {
+		
+		genericMethods.getElement("LoginControl1_txtCompanyCode", "id").sendKeys("wfbknim");
+
+	}
+
+}

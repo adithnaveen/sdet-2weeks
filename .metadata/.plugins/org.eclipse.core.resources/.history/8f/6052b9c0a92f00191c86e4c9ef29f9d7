@@ -1,0 +1,16 @@
+package com.training.utilities;
+
+public interface Driver {
+	// KEYS
+	
+	String CHROME="webdriver.chrome.driver";
+	String IE ="webdriver.ie.driver";
+	String FIREFOX="webdriver.firefox.marionette";
+	
+	// PATH
+	String CHROME_PATH="";
+	String FIREFOX_PATH="";
+	String IE_PATH32="";
+	String IE_PATH64="";
+	
+}

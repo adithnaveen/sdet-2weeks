@@ -1,0 +1,10 @@
+# this is my comment 
+
+Feature: This feature is for testing saction of loan with validation credit score 
+
+Scenario: 
+	Given
+		 
+	When
+	Then  
+	

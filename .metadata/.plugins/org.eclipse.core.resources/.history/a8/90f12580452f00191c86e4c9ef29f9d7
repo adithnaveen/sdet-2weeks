@@ -1,0 +1,10 @@
+package com.training.basics;
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		System.out.println("Hello from basics");
+	
+		System.out.println("This is second statement from HelloWorld");
+
+	}
+}

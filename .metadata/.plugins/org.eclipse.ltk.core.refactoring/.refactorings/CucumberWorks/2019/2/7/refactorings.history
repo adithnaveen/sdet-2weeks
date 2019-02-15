@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestRunner.java&apos; to &apos;SeleniumCucumber/tests/com.training.runners&apos;&#x0D;&#x0A;- Original project: &apos;CucumberWorks&apos;&#x0D;&#x0A;- Destination element: &apos;SeleniumCucumber/tests/com.training.runners&apos;&#x0D;&#x0A;- Original element: &apos;com.training.runner.TestRunner.java&apos;" description="Copy compilation unit" destination="=SeleniumCucumber/tests&lt;com.training.runners" element1="/tests&lt;com.training.runner{TestRunner.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1550261845609" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,32 @@
+package com.training.selenium.works;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GoogleTest {
+
+	String baseUrl = "https://www.google.com/";
+	WebDriver driver = null;
+
+	@Before
+	public void setUp() {
+		// TODO 1. load the driver
+		System.setProperty("webdriver.chrome.driver", "C:\\SDET Works\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+
+	@After
+	public void tearDown() {
+	}
+
+	@Test
+	public void googleTest() {
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.db.connection;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class GetConnection {
+	public static Connection conn; 
+	public PreparedStatement ps1, ps2, ps3; 
+}

@@ -1,0 +1,14 @@
+package com.training.selenium.pom;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class LoginPOMTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.db.client;
+
+import com.db.dao.CustomerDAO;
+import com.db.entity.Customer;
+import com.db.interfaces.ICustomerDAO;
+
+public class CustomerClient {
+	public static void main(String[] args) {
+
+		Customer customer = new Customer();
+		customer.setCustId(104);
+		customer.setCustName("Ravi");
+		customer.setCustIncome(24000);
+		customer.setCustEmail("ravi@fanniemae.com");
+
+		ICustomerDAO customerDAO = new CustomerDAO();
+		/*System.out.println(customerDAO.
+				insertCustomer(customer)
+					? "Inserted"
+					: "Not Inserted, look logs");*/
+		
+		
+
+	}
+}

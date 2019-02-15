@@ -1,0 +1,5 @@
+package com.training.day2.interfaces;
+
+public class Rectangle implements IShape {
+
+}

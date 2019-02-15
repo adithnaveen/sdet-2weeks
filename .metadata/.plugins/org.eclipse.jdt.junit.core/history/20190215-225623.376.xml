@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberWorks" tests="23" started="23" failures="0" errors="0" ignored="0">
+  <testsuite name="com.training.runner.TestRunner" time="0.244">
+    <testsuite name="Feature: This feature is for testing saction of loan with validation credit score" time="0.215">
+      <testsuite name="Scenario Outline:" time="0.215">
+        <testsuite name="Examples:" time="0.215">
+          <testsuite name="| 450 | rejected |" time="0.0">
+            <testcase name="Given the browser is open" classname="| 450 | rejected |" time="0.0"/>
+            <testcase name="Given the username and password" classname="| 450 | rejected |" time="0.0"/>
+            <testcase name="And the SSN number" classname="| 450 | rejected |" time="0.0"/>
+            <testcase name="When the credit score of user is &quot;450&quot;" classname="| 450 | rejected |" time="0.0"/>
+            <testcase name="Then keep the loan on &quot;rejected&quot;" classname="| 450 | rejected |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| 556 | hold |" time="0.0">
+            <testcase name="Given the browser is open" classname="| 556 | hold |" time="0.0"/>
+            <testcase name="Given the username and password" classname="| 556 | hold |" time="0.0"/>
+            <testcase name="And the SSN number" classname="| 556 | hold |" time="0.0"/>
+            <testcase name="When the credit score of user is &quot;556&quot;" classname="| 556 | hold |" time="0.0"/>
+            <testcase name="Then keep the loan on &quot;hold&quot;" classname="| 556 | hold |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| 654 | approved |" time="0.0">
+            <testcase name="Given the browser is open" classname="| 654 | approved |" time="0.0"/>
+            <testcase name="Given the username and password" classname="| 654 | approved |" time="0.0"/>
+            <testcase name="And the SSN number" classname="| 654 | approved |" time="0.0"/>
+            <testcase name="When the credit score of user is &quot;654&quot;" classname="| 654 | approved |" time="0.0"/>
+            <testcase name="Then keep the loan on &quot;approved&quot;" classname="| 654 | approved |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| 711 | approved |" time="0.0">
+            <testcase name="Given the browser is open" classname="| 711 | approved |" time="0.0"/>
+            <testcase name="Given the username and password" classname="| 711 | approved |" time="0.0"/>
+            <testcase name="And the SSN number" classname="| 711 | approved |" time="0.0"/>
+            <testcase name="When the credit score of user is &quot;711&quot;" classname="| 711 | approved |" time="0.0"/>
+            <testcase name="Then keep the loan on &quot;approved&quot;" classname="| 711 | approved |" time="0.0"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: for login" time="0.0">
+      <testsuite name="Scenario: the the user credentials" time="0.0">
+        <testcase name="Given the user details" classname="Scenario: the the user credentials" time="0.0"/>
+        <testcase name="When credentials are validated" classname="Scenario: the the user credentials" time="0.0"/>
+        <testcase name="Then take user to home page" classname="Scenario: the the user credentials" time="0.0"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

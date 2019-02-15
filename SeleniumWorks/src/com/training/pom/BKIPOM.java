@@ -1,0 +1,50 @@
+package com.training.pom;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class BKIPOM {
+	private WebDriver driver; 
+	private WebElement element; 
+	
+	
+	public BKIPOM(WebDriver driver) {
+		this.driver = driver; 
+	}
+	
+	public void sendCompanyCode(String companyCode) {
+		element = driver.findElement(By.id("LoginControl1_txtCompanyCode"));
+		element.clear(); 
+		element.sendKeys(companyCode);
+	}
+	
+	public void sendUserName(String userName) {
+		element = driver.findElement(By.id("LoginControl1_txtUsername")); 
+		element.clear(); 
+		element.sendKeys(userName);
+	}
+	
+	public void sendPassword(String password) {
+		element = driver.findElement(By.id("LoginControl1_txtPassword")); 
+		element.clear(); 
+		element.sendKeys(password);
+	}
+	
+	public void clickLoginBtn() {
+		driver.findElement(By.id("LoginControl1_btnLogin")).click(); 
+	}
+	
+	public void clickLoginHelp() {
+		driver.findElement(By.id("LoginControl1_btnHelp")).click();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

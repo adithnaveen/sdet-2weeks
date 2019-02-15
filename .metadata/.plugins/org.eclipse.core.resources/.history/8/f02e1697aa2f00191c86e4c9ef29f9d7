@@ -1,0 +1,15 @@
+package com.training.utilities;
+
+import org.openqa.selenium.WebDriver;
+
+public class DriverFactory {
+	private static WebDriver driver; 
+	
+	public static WebDriver getDriver(String driverName) {
+		if(driverName.equals(DriverNames.CHROME)) {
+			
+		}else if(driverName.equals(DriverNames.IE)) {
+			
+		}
+	}
+}

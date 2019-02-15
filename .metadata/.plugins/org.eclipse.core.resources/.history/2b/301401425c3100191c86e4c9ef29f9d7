@@ -1,0 +1,45 @@
+package com.training.cucumber.steps;
+
+import org.openqa.selenium.WebDriver;
+
+import com.training.selenium.pom.BKIPOM;
+import com.training.selenium.utilities.DriverFactory;
+import com.training.selenium.utilities.DriverNames;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class BKILoginStep {
+	private WebDriver driver; 
+	private BKIPOM bkipom; 
+	
+	
+	// this is background 
+	@Given("^the browser chrome is open$")
+	public void the_browser_chrome_is_open() throws Throwable {
+		
+		driver = DriverFactory.getDriver(DriverNames.CHROME); 
+
+	}
+
+	@Given("^the details on the screen$")
+	public void the_details_on_the_screen() throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+
+	@When("^logged in sucessfully$")
+	public void logged_in_sucessfully() throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+
+	@Then("^goto homepage$")
+	public void goto_homepage() throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+
+}

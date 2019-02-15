@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginPOMTest" project="SeleniumWorks" tests="2" started="2" failures="0" errors="0" ignored="1">
+  <testsuite name="com.training.selenium.pom.LoginPOMTest" time="15.319">
+    <testcase name="loginTest" classname="com.training.selenium.pom.LoginPOMTest" time="0.0" ignored="true"/>
+    <testcase name="login1Test1" classname="com.training.selenium.pom.LoginPOMTest" time="15.319"/>
+  </testsuite>
+</testrun>

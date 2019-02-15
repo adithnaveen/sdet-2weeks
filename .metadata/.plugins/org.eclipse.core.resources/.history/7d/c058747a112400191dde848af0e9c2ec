@@ -1,0 +1,21 @@
+package com.training.day2.interfaces;
+
+public class Rectangle implements IShape {
+
+	private int len;
+	private int bre; 
+	
+	
+	public Rectangle(int len, int bre) {
+		super();
+		this.len = len;
+		this.bre = bre;
+	}
+
+
+	@Override
+	public void area() {
+		System.out.println("Area of Rectangle is " + (len * bre));
+	}
+
+}

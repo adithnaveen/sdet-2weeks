@@ -1,0 +1,6 @@
+package com.training.day2.interfaces;
+
+public class Circle implements IShape
+{
+
+}

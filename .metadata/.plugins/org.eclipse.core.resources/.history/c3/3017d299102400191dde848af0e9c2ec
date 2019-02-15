@@ -1,0 +1,11 @@
+package com.training.day2.interfaces;
+
+public class Rectangle implements IShape {
+
+	@Override
+	public void area() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberWorks" tests="12" started="12" failures="0" errors="0" ignored="6">
+  <testsuite name="com.training.runner.TestRunner" time="0.061">
+    <testsuite name="Feature: This feature is for testing saction of loan with validation credit score" time="0.061">
+      <testsuite name="Scenario Outline:" time="0.061">
+        <testsuite name="Examples:" time="0.061">
+          <testsuite name="| 450 | rejected |" time="0.001" incomplete="true">
+            <skipped/>
+            <testcase name="Given the username and password" classname="| 450 | rejected |" time="0.001"/>
+            <testcase name="And the SSN number" classname="| 450 | rejected |" time="0.0"/>
+            <testcase name="When the credit score of user is &quot;450&quot;" classname="| 450 | rejected |" time="0.0" ignored="true"/>
+            <testcase name="Then keep the loan on &quot;rejected&quot;" classname="| 450 | rejected |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| 556 | hold |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Given the username and password" classname="| 556 | hold |" time="0.0"/>
+            <testcase name="And the SSN number" classname="| 556 | hold |" time="0.0"/>
+            <testcase name="When the credit score of user is &quot;556&quot;" classname="| 556 | hold |" time="0.0" ignored="true"/>
+            <testcase name="Then keep the loan on &quot;hold&quot;" classname="| 556 | hold |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| 654 | approved |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Given the username and password" classname="| 654 | approved |" time="0.0"/>
+            <testcase name="And the SSN number" classname="| 654 | approved |" time="0.0"/>
+            <testcase name="When the credit score of user is &quot;654&quot;" classname="| 654 | approved |" time="0.0" ignored="true"/>
+            <testcase name="Then keep the loan on &quot;approved&quot;" classname="| 654 | approved |" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

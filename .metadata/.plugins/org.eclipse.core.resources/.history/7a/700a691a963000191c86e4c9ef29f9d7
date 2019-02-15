@@ -1,0 +1,15 @@
+package com.training.pom;
+
+import org.openqa.selenium.WebDriver;
+
+public class BKIPOM1 {
+	private WebDriver driver; 
+	
+	public BKIPOM1(WebDriver driver) {
+		this.driver = driver; 
+	}
+
+	
+
+}
+

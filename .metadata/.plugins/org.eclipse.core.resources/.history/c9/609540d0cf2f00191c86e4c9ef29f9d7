@@ -1,0 +1,9 @@
+package com.training.utilities;
+
+import org.openqa.selenium.WebDriver;
+
+public class ScreenShot {
+	
+	private WebDriver driver; 
+	
+}

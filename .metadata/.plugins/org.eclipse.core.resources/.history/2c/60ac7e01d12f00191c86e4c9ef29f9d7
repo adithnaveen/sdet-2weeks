@@ -1,0 +1,35 @@
+package com.training.utilities;
+
+import java.io.File;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
+public class ScreenShot {
+	
+	private WebDriver driver; 
+	
+	
+	public ScreenShot(WebDriver driver) {
+		this.driver = driver; 
+	}
+	
+	public void captureScreen(String fileName) {
+		String path ="C:\\SDET Works\\images\\"; 
+		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); 
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

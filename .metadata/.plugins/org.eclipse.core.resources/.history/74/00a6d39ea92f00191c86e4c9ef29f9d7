@@ -1,0 +1,9 @@
+package com.training.utilities;
+
+public interface Driver {
+	// KEYS
+	
+	String CHROME="webdriver.chrome.driver";
+	
+	// PATH 
+}

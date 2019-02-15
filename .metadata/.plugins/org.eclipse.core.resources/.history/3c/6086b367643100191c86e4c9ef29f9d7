@@ -1,0 +1,8 @@
+package com.training.selenium.beans;
+
+public class UserDetails {
+	private String userName; 
+	private String password; 
+	
+	
+}

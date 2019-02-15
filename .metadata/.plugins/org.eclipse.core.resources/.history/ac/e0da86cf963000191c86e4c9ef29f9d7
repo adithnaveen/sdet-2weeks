@@ -1,0 +1,32 @@
+package com.training.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class BKIPOM1 {
+	private WebDriver driver; 
+	
+	public BKIPOM1(WebDriver driver) {
+		this.driver = driver; 
+	}
+
+	@FindBy(id="LoginControl1_txtCompanyCode")
+	private WebElement companyCode;
+
+	@FindBy(id="LoginControl1_txtUsername")
+	private WebElement userName; 
+	
+	@FindBy(id="LoginControl1_txtPassword")
+	private WebElement password; 
+	
+	@FindBy(id="LoginControl1_btnLogin")
+	private WebElement submitBtn; 
+	
+	
+	
+	
+	
+	
+}
+

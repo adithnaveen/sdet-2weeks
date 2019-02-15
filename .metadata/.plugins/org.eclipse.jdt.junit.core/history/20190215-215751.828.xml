@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberWorks" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.training.runner.TestRunner" time="0.001">
+    <testsuite name="Feature: for login" time="0.001">
+      <testsuite name="Scenario: the the user credentials" time="0.001">
+        <testcase name="Given the user details" classname="Scenario: the the user credentials" time="0.001"/>
+        <testcase name="When credentials are validated" classname="Scenario: the the user credentials" time="0.0"/>
+        <testcase name="Then take user to home page" classname="Scenario: the the user credentials" time="0.0"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

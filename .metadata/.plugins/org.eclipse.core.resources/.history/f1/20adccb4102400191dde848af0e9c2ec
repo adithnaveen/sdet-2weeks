@@ -1,0 +1,15 @@
+package com.training.day2.interfaces;
+
+public class Rectangle implements IShape {
+
+	private int len;
+	private int bre; 
+	
+	
+	
+	@Override
+	public void area() {
+		
+	}
+
+}

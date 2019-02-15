@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberWorks" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="com.training.runner.TestRunner" time="0.044">
+    <testsuite name="Feature: This feature is for testing saction of loan with validation credit score" time="0.044">
+      <testsuite name="Scenario:" time="0.001">
+        <testcase name="Given the username and password" classname="Scenario: " time="0.0"/>
+        <testcase name="And the SSN number" classname="Scenario: " time="0.0"/>
+        <testcase name="When the credit score of user is 450" classname="Scenario: " time="0.0"/>
+        <testcase name="Then keep the loan on hold" classname="Scenario: " time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario:" time="0.0">
+        <testcase name="Given the username and password" classname="Scenario: " time="0.0"/>
+        <testcase name="And the SSN number" classname="Scenario: " time="0.0"/>
+        <testcase name="When the credit score of user is 550" classname="Scenario: " time="0.0"/>
+        <testcase name="Then keep the loan on validating" classname="Scenario: " time="0.0"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,11 @@
+package com.training.selenium.dao;
+
+import java.util.List;
+
+import com.training.selenium.beans.UserDetails;
+
+public interface IUserDetails {
+
+	List<UserDetails> getAllUsers();
+
+}

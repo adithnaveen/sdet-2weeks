@@ -1,0 +1,24 @@
+package com.training.utilities;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class WaitTypes {
+	private WebDriver driver ; 
+	
+	public WaitTypes(WebDriver driver) {
+		this.driver = driver; 
+	}
+	
+	
+	// we shall have methods which will return the web element 
+	// on demand of explicit waits 
+	
+	public WebElement presenceElementLocated() {
+		
+	}
+	
+	public WebElement visibilityOfElementLocated() {
+		
+	}
+}

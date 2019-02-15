@@ -1,0 +1,44 @@
+package com.db.tests;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.List;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+import com.db.dao.CustomerDAO;
+import com.db.entity.Customer;
+import com.training.bl.BusinessLogic;
+
+@RunWith(Parameterized.class)
+public class CustomerParameterization {
+	
+	@Parameters
+	public static List<Customer> init() {
+		return new CustomerDAO().getAllCustomers(); 
+	}
+	
+	private Customer customer; 
+
+	public CustomerParameterization(Customer customer) {
+		this.customer  = customer;
+	}
+	
+	static BusinessLogic bl  = null;
+	@BeforeClass
+	public static void setUpBeforeClass() {
+		bl = new BusinessLogic(); 
+	}
+	
+	@Test
+	public void sayHiTest() {
+		
+		
+
+	}
+	
+}

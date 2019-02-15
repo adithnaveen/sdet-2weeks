@@ -1,0 +1,14 @@
+package com.training.generics;
+
+import org.openqa.selenium.WebDriver;
+
+public class GenericMethods {
+	private WebDriver driver ;
+	
+	public GenericMethods(WebDriver driver) {
+		this.driver = driver; 
+	}
+	
+	
+	
+}

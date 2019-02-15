@@ -1,0 +1,122 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8255633336,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the browser chrome is open",
+            "match": {
+              "location": "BKILoginStep.the_browser_chrome_is_open()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "id": "to-validate-login-credentials;",
+        "after": [
+          {
+            "result": {
+              "duration": 3290840325,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BKILoginStep.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3905337397,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the details on the screen",
+            "match": {
+              "location": "BKILoginStep.the_details_on_the_screen(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "companycode"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "wfbknim"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1390014108,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click on submit button",
+            "match": {
+              "location": "BKILoginStep.click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79065058,
+              "error_message": "java.lang.AssertionError: String mismatched for g9ursa\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat com.training.cucumber.steps.BKILoginStep.logged_in_sucessfully(BKILoginStep.java:66)\r\n\tat ✽.When logged in sucessfully(bkitest.feature:14)\r\n",
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "logged in sucessfully",
+            "match": {
+              "location": "BKILoginStep.logged_in_sucessfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "goto homepage",
+            "match": {
+              "location": "BKILoginStep.goto_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "to validate login credentials",
+    "description": "",
+    "id": "to-validate-login-credentials",
+    "keyword": "Feature",
+    "uri": "bkitest.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LoginTag"
+      }
+    ]
+  }
+]

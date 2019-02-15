@@ -1,0 +1,40 @@
+package com.training.selenium.generics;
+
+import static com.training.utilities.Basics.sleep;
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+import com.training.generics.GenericMethods;
+import com.training.utilities.DriverFactory;
+import com.training.utilities.DriverNames;
+import com.training.utilities.ScreenShot;
+import com.training.utilities.WaitTypes;
+
+public class ActionClassTest {
+
+
+	private String baseUrl =""; 
+	private WebDriver driver; 
+	private GenericMethods genericMethods;
+	private WaitTypes waitTypes; 
+	private ScreenShot screenshot; 
+	
+	@Before
+	public void setUp() {
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		genericMethods = new GenericMethods(driver); 
+		baseUrl= "https://fnmaloansphereinvoicinguat.bkfsconnect.com/public/Login/NewWayLogin.aspx";
+		waitTypes = new WaitTypes(driver); 
+		screenshot = new ScreenShot(driver); 
+	}
+	@After
+	public void tearDown() {
+		sleep(3000); 
+		driver.close();
+	}
+
+}

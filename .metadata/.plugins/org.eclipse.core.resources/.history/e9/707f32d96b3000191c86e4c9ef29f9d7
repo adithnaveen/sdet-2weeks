@@ -1,0 +1,13 @@
+package com.training.selenium.js;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class JavaScriptExampleTest {
+
+
+	
+	
+
+}

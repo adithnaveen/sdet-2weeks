@@ -1,0 +1,19 @@
+package com.training.day2.interfaces;
+
+public class Square implements IShape{
+
+	private int len;
+
+	public Square(int len) {
+		super();
+		this.len = len;
+	}
+
+	@Override
+	public void area() {
+		// TODO Auto-generated method stub
+		
+	} 
+	
+	
+}

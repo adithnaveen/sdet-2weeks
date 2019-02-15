@@ -1,0 +1,10 @@
+package com.db.interfaces;
+
+import com.db.entity.Customer;
+
+public interface ICustomerDAO {
+	public boolean insertCustomer(Customer customer); 
+	
+	public boolean deleteCustomer(int custId);
+	
+}

@@ -1,0 +1,42 @@
+package com.training.generics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class GenericMethods {
+	private WebDriver driver ;
+	
+	public GenericMethods(WebDriver driver) {
+		this.driver = driver; 
+	}
+	
+
+	/**
+	 * 
+	 * @param locator
+	 * @param type
+	 * @see type id, name, className, xpath, linkText, partialLinkText
+	 *     locators will be an entry from the DOM
+	 * @return WebElement  
+	 */
+	
+	public WebElement getElement(String locator, String type) {
+		WebElement element = null; 
+		type = type.toLowerCase(); 
+		
+		if(type.equals("id")) {
+			element = driver.findElement(By.id(locator)); 
+		}else if(type.equals("name")) {
+			element = driver.findElement(By.name(locator)); 
+		}else if(type.equals("xpath")) {
+			element = driver.findElement(By.xpath(locator)); 
+		}else if(type.equals("class")) {
+			element = driver.findElement(By.className(locator)); 
+		}
+		System.out.println("Returning element type : " + type);
+		return element; 
+		
+	}
+	
+}

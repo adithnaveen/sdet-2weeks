@@ -1,0 +1,12 @@
+# this is my comment 
+
+@Sanity @Base
+Feature: This feature is for testing saction of loan with validation credit score 
+
+Scenario Outline: 
+	Given the username and password 
+	And the SSN number 		 
+	When the credit score of user is 450 
+	Then keep the loan on hold 
+	
+

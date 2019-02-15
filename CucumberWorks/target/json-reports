@@ -1,0 +1,677 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# this is my comment"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 269620213,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the browser is open",
+            "match": {
+              "location": "CreditScoreBackground.the_browser_is_open()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 457847,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.loadDriver()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "",
+        "description": "",
+        "id": "this-feature-is-for-testing-saction-of-loan-with-validation-credit-score;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3919181,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 554667,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the username and password",
+            "match": {
+              "location": "CreditScoreStep.the_username_and_password()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 709334,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the SSN number",
+            "match": {
+              "location": "CreditScoreStep.the_SSN_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8302772,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the credit score of user is \"450\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "450",
+                  "offset": 29
+                }
+              ],
+              "location": "CreditScoreStep.the_credit_score_of_user_is_amount(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2916925,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "keep the loan on \"rejected\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rejected",
+                  "offset": 18
+                }
+              ],
+              "location": "CreditScoreStep.keep_the_loan_on_hold(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Base"
+          },
+          {
+            "line": 3,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 520206,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the browser is open",
+            "match": {
+              "location": "CreditScoreBackground.the_browser_is_open()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 789333,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.loadDriver()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "",
+        "description": "",
+        "id": "this-feature-is-for-testing-saction-of-loan-with-validation-credit-score;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 125949,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 188307,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the username and password",
+            "match": {
+              "location": "CreditScoreStep.the_username_and_password()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 90257,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the SSN number",
+            "match": {
+              "location": "CreditScoreStep.the_SSN_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1046154,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the credit score of user is \"556\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "556",
+                  "offset": 29
+                }
+              ],
+              "location": "CreditScoreStep.the_credit_score_of_user_is_amount(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 149333,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "keep the loan on \"hold\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hold",
+                  "offset": 18
+                }
+              ],
+              "location": "CreditScoreStep.keep_the_loan_on_hold(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Base"
+          },
+          {
+            "line": 3,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 715077,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the browser is open",
+            "match": {
+              "location": "CreditScoreBackground.the_browser_is_open()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 491487,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.loadDriver()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "",
+        "description": "",
+        "id": "this-feature-is-for-testing-saction-of-loan-with-validation-credit-score;;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 328615,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 207590,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the username and password",
+            "match": {
+              "location": "CreditScoreStep.the_username_and_password()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 205949,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the SSN number",
+            "match": {
+              "location": "CreditScoreStep.the_SSN_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 861539,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the credit score of user is \"654\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "654",
+                  "offset": 29
+                }
+              ],
+              "location": "CreditScoreStep.the_credit_score_of_user_is_amount(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 329436,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "keep the loan on \"approved\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "approved",
+                  "offset": 18
+                }
+              ],
+              "location": "CreditScoreStep.keep_the_loan_on_hold(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Base"
+          },
+          {
+            "line": 3,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1564309,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the browser is open",
+            "match": {
+              "location": "CreditScoreBackground.the_browser_is_open()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 195693,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.loadDriver()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "",
+        "description": "",
+        "id": "this-feature-is-for-testing-saction-of-loan-with-validation-credit-score;;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 798770,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4144822,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the username and password",
+            "match": {
+              "location": "CreditScoreStep.the_username_and_password()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 260103,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the SSN number",
+            "match": {
+              "location": "CreditScoreStep.the_SSN_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 368821,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the credit score of user is \"711\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "711",
+                  "offset": 29
+                }
+              ],
+              "location": "CreditScoreStep.the_credit_score_of_user_is_amount(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3878155,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "keep the loan on \"approved\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "approved",
+                  "offset": 18
+                }
+              ],
+              "location": "CreditScoreStep.keep_the_loan_on_hold(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Base"
+          },
+          {
+            "line": 3,
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is for testing saction of loan with validation credit score",
+    "description": "",
+    "id": "this-feature-is-for-testing-saction-of-loan-with-validation-credit-score",
+    "keyword": "Feature",
+    "uri": "creditscore.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@Sanity"
+      },
+      {
+        "line": 3,
+        "name": "@Base"
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 234257,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.loadDriver()"
+            }
+          },
+          {
+            "result": {
+              "duration": 291282,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.dbConnection()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "the the user credentials",
+        "description": "",
+        "id": "for-login;the-the-user-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 55384,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProjectHooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7058874,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user details",
+            "match": {
+              "location": "LoginStep.the_user_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "venkat",
+                  "testing"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "tripti",
+                  "hello"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "mike",
+                  "secret"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 153436,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "credentials are validated",
+            "match": {
+              "location": "LoginStep.credentials_are_validated()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 106256,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "take user to home page",
+            "match": {
+              "location": "LoginStep.take_user_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@DBConnection"
+          }
+        ]
+      }
+    ],
+    "name": "for login",
+    "description": "",
+    "id": "for-login",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Smoke"
+      },
+      {
+        "line": 1,
+        "name": "@Base"
+      }
+    ]
+  }
+]

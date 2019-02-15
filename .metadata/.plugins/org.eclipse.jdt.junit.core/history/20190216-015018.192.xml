@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (1)" project="SeleniumCucumber" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.training.runners.TestRunner" time="2.827">
+    <testsuite name="Feature: to validate login credentials" time="2.827">
+      <testsuite name="Scenario:" time="2.827">
+        <testcase name="Given the browser chrome is open" classname="Scenario: " time="2.223"/>
+        <testcase name="Given the details on the screen" classname="Scenario: " time="0.22"/>
+        <testcase name="When logged in sucessfully" classname="Scenario: " time="0.001"/>
+        <testcase name="Then goto homepage" classname="Scenario: " time="0.383"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

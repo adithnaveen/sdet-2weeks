@@ -1,0 +1,167 @@
+package com.training.selenium.datepicker;
+
+import static com.training.utilities.Basics.sleep;
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.training.generics.GenericMethods;
+import com.training.utilities.DriverFactory;
+import com.training.utilities.DriverNames;
+import com.training.utilities.ScreenShot;
+import com.training.utilities.WaitTypes;
+
+public class DatePickerTest {
+
+	private String baseUrl;
+	private WebDriver driver;
+	private GenericMethods genericMethods;
+	private WaitTypes waitTypes;
+	private ScreenShot screenshot;
+
+	@Before
+	public void setUp() {
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		genericMethods = new GenericMethods(driver);
+		baseUrl = "https://www.expedia.com/";
+		waitTypes = new WaitTypes(driver);
+		screenshot = new ScreenShot(driver);
+	}
+
+	@After
+	public void tearDown() {
+		sleep(3000);
+		driver.close();
+	}
+
+	@Ignore
+	@Test
+	public void sampleItenary() {
+		driver.get(baseUrl);
+
+		String flyFrom = "Dallas (DFW-All Airports)";
+		String flyTo = "Washington, DC (IAD-Washington Dulles Intl.)";
+
+		// click flights tab
+		genericMethods.getElement("tab-flight-tab-hp", "id").click();
+
+		// enter fly from
+		genericMethods.getElement("flight-origin-hp-flight", "id").clear();
+		genericMethods.getElement("flight-origin-hp-flight", "id").sendKeys(flyFrom);
+
+		// enter fly to
+		genericMethods.getElement("flight-destination-hp-flight", "id").clear();
+		genericMethods.getElement("flight-destination-hp-flight", "id").sendKeys(flyTo);
+
+		genericMethods.getElement("flight-departing-hp-flight", "id").click();
+
+		sleep(1000);
+
+		String departDateXPath = ".//*[@id='flight-departing-wrapper-hp-flight']"
+				+ "/div/div/div[2]/table/tbody/tr/td/button[text()=23]";
+
+		genericMethods.getElement(departDateXPath, "xpath").click();
+	}
+
+	@Ignore
+	@Test
+	public void datePickerValidTest() {
+		driver.get(baseUrl);
+
+		String flyFrom = "Dallas (DFW-All Airports)";
+		String flyTo = "Washington, DC (IAD-Washington Dulles Intl.)";
+
+		// click flights tab
+		genericMethods.getElement("tab-flight-tab-hp", "id").click();
+
+		// enter fly from
+		genericMethods.getElement("flight-origin-hp-flight", "id").clear();
+		genericMethods.getElement("flight-origin-hp-flight", "id").sendKeys(flyFrom);
+
+		// enter fly to
+		genericMethods.getElement("flight-destination-hp-flight", "id").clear();
+		genericMethods.getElement("flight-destination-hp-flight", "id").sendKeys(flyTo);
+
+		genericMethods.getElement("flight-departing-hp-flight", "id").click();
+		sleep(1000);
+
+		// to check the dates are not disabled, and enter each value in 
+		// the text box 
+		
+		String enabledXpaths=".//*[@id='flight-departing-wrapper-hp-flight']/div/div/div[2]/table/tbody/tr/td/button[not(@disabled)]"; 
+
+		List<WebElement> activeDateElements = 
+					genericMethods.getElementAsList(enabledXpaths, "xpath"); 
+		
+		List<String> activeDateAsString = new ArrayList<>(); 
+		for(WebElement temp : activeDateElements) {
+			activeDateAsString.add(temp.getText());
+			System.out.println(temp.getText());
+		}
+		
+		int startDate =14; 
+		int endDate  = 28; 
+		
+		for(int i= startDate; i<=endDate; i++) {
+			String xpathSelectionDate = ".//*[@id='flight-departing-wrapper-hp-flight']"
+					+ "/div/div/div[2]/table/tbody/tr/td/button[text()="+i+"]";
+
+			genericMethods.getElement("flight-departing-hp-flight", "id").click();
+			sleep(1000);
+			
+			genericMethods.getElement(xpathSelectionDate, "xpath").click();
+			
+			screenshot.captureScreen();
+			
+		}
+		
+		
+	}
+
+	@Test
+	public void partialTextTest() {
+		String flyFromPartial="new"; 
+		String flyToPartial ="san"; 
+		
+		
+		driver.get(baseUrl); 
+		
+		List<String> listOfFlyFrom = new ArrayList<String>(); 
+		List<String> listOfFlyTo = new ArrayList<String>(); 
+
+		// click flights tab
+		genericMethods.getElement("tab-flight-tab-hp", "id").click();
+
+		// enter fly from
+		genericMethods.getElement("flight-origin-hp-flight", "id").clear();
+		genericMethods.getElement("flight-origin-hp-flight", "id").sendKeys(flyFromPartial);
+		
+		sleep(1000);
+
+		List<WebElement> flyFromPorts = genericMethods.
+					getElementAsList("results-item", "class"); 
+
+		for(WebElement temp : flyFromPorts) {
+			System.out.println(temp.getText());
+			listOfFlyFrom.add(temp.getText()); 
+		}
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+}

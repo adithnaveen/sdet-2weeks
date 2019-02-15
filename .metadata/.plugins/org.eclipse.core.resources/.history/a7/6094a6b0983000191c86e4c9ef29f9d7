@@ -1,0 +1,50 @@
+package com.training.pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class BKIPOM1 {
+	private WebDriver driver; 
+	
+	public BKIPOM1(WebDriver driver) {
+		this.driver = driver; 
+		PageFactory.initElements(factory, this); 
+	}
+
+	@FindBy(id="LoginControl1_txtCompanyCode")
+	private WebElement companyCode;
+
+	@FindBy(id="LoginControl1_txtUsername")
+	private WebElement userName; 
+	
+	@FindBy(id="LoginControl1_txtPassword")
+	private WebElement password; 
+	
+	@FindBy(id="LoginControl1_btnLogin")
+	private WebElement submitBtn; 
+	
+	
+	public void sendCompanyCode(String companyCode) {
+		this.companyCode.clear(); 
+		this.companyCode.sendKeys(companyCode);
+	}
+	
+	public void sendUserName(String userName) {
+		this.userName.clear();  
+		this.userName.sendKeys(userName);
+	}
+	
+	public void sendPassword(String password) {
+		this.password.clear(); 
+		this.password.sendKeys(password);
+	}
+	
+	public void clickSubmitButton() {
+		this.submitBtn.click();
+	}
+	
+	
+}
+

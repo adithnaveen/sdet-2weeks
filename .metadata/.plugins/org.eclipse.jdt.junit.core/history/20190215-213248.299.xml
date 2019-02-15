@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberWorks" tests="11" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="com.training.runner.TestRunner" time="0.059">
+    <testsuite name="Feature: This feature is for testing saction of loan with validation credit score" time="0.029">
+      <testsuite name="Scenario:" time="0.0">
+        <testcase name="Given the username and password" classname="Scenario: " time="0.0"/>
+        <testcase name="And the SSN number" classname="Scenario: " time="0.0"/>
+        <testcase name="When the credit score of user is 450" classname="Scenario: " time="0.0"/>
+        <testcase name="Then keep the loan on hold" classname="Scenario: " time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario:" time="0.0">
+        <testcase name="Given the username and password" classname="Scenario: " time="0.0"/>
+        <testcase name="And the SSN number" classname="Scenario: " time="0.0"/>
+        <testcase name="When the credit score of user is 550" classname="Scenario: " time="0.0"/>
+        <testcase name="Then keep the loan on validating" classname="Scenario: " time="0.0"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: for login" time="0.0">
+      <testsuite name="Scenario: the the user credentials" time="0.0">
+        <testcase name="Given the user details" classname="Scenario: the the user credentials" time="0.0"/>
+        <testcase name="When credentials are validated" classname="Scenario: the the user credentials" time="0.0"/>
+        <testcase name="Then take user to home page" classname="Scenario: the the user credentials" time="0.0"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

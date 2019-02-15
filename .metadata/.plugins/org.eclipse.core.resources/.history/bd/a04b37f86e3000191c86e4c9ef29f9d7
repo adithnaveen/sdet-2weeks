@@ -1,0 +1,65 @@
+package com.training.selenium.js;
+
+import static com.training.utilities.Basics.sleep;
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.training.generics.GenericMethods;
+import com.training.utilities.DriverFactory;
+import com.training.utilities.DriverNames;
+import com.training.utilities.ScreenShot;
+import com.training.utilities.WaitTypes;
+
+public class JavaScriptExampleTest {
+
+	private String baseUrl ; 
+	private WebDriver driver; 
+	private GenericMethods genericMethods;
+	private WaitTypes waitTypes; 
+	private ScreenShot screenshot; 
+	private JavascriptExecutor javascriptExecutor; 
+	
+	@Before
+	public void setUp() {
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		genericMethods = new GenericMethods(driver); 
+		baseUrl= "https://fnmaloansphereinvoicinguat.bkfsconnect.com/public/Login/NewWayLogin.aspx";
+		waitTypes = new WaitTypes(driver); 
+		screenshot = new ScreenShot(driver); 
+		javascriptExecutor = (JavascriptExecutor) driver; 
+	}
+	@After
+	public void tearDown() {
+		sleep(3000); 
+		driver.close();
+	}
+	
+	@Test
+	public void bkiJSTest() {
+		
+		driver.get(baseUrl);
+		WebElement element = 
+			(WebElement) javascriptExecutor.
+			executeScript("return document.getElementById('LoginControl1_txtCompanyCode')"); 
+		
+		element.sendKeys("sample data");
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+
+

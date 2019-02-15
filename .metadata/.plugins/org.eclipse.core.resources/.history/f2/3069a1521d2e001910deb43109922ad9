@@ -1,0 +1,26 @@
+package com.db.connection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class GetConnection {
+	public static Connection conn; 
+	public PreparedStatement ps1, ps2, ps3; 
+	public ResultSet rs1, rs2, rs3; 
+	
+	
+	public Connection getOracleConnection() {
+		
+		Class.forName("oracle.jdbc.OracleDriver"); 
+		conn = DriverManager.getConnection(url, user, password)
+		
+		return null; 
+	}
+	
+	public Connection getMySQLConnection() {
+		return null;
+	}
+	
+}

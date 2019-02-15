@@ -1,0 +1,38 @@
+package com.training.selenium.dao;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.training.selenium.beans.UserDetails;
+
+
+
+public class UserDetailsDAO {
+	@Override
+	public List<UserDetails> getAllUsers() {
+		System.out.println("in get all customers");
+		String sql ="select custid, custname, custincome, custemail from customer";
+		
+		List<Customer> list = null;
+		try {
+			list = new ArrayList<>(); 
+			GetConnection gc = new GetConnection(); 
+			gc.rs1 = GetConnection.getOracleConnection().prepareStatement(sql).executeQuery(); 
+			
+			while(gc.rs1.next()) {
+				Customer customer = new Customer(); 
+				customer.setCustId(gc.rs1.getInt(1));
+				customer.setCustName(gc.rs1.getString(2)); 
+				customer.setCustIncome(gc.rs1.getDouble(3));
+				customer.setCustEmail(gc.rs1.getString(4));
+				
+				list.add(customer); 
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+}

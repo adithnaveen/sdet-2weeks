@@ -1,0 +1,109 @@
+package com.db.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.db.connection.GetConnection;
+import com.db.entity.Customer;
+import com.db.interfaces.ICustomerDAO;
+
+public class CustomerDAO implements ICustomerDAO {
+
+	/**
+	 * array indexes starts from 0 
+	 * iterator indexes start from -1 
+	 * positional parameters start from 1 
+	 */
+	@Override
+	public boolean insertCustomer(Customer customer) {
+		String sql ="insert into customer values(?,?,?,?)"; 
+		
+		GetConnection gc = new GetConnection(); 
+		
+		try {
+			gc.ps1 = GetConnection.getOracleConnection().prepareStatement(sql);
+			gc.ps1.setInt(1, customer.getCustId());
+			gc.ps1.setString(2, customer.getCustName());
+			gc.ps1.setDouble(3, customer.getCustIncome());
+			gc.ps1.setString(4, customer.getCustEmail());
+			
+			return gc.ps1.executeUpdate()>0;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return false;
+	}
+
+	@Override
+	public boolean deleteCustomer(int custId) {
+		String sql ="delete from customer where custid=?";
+		GetConnection gc = null;
+		try {
+			gc = new GetConnection(); 
+			gc.ps1 = GetConnection.getOracleConnection().prepareStatement(sql); 
+			gc.ps1.setInt(1, custId);
+			
+			return gc.ps1.executeUpdate()>0;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			if(gc!=null) {
+				try {
+					gc.ps1.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				} 
+			}
+		}
+		
+		return false;
+	}
+
+	@Override
+	public boolean updateCustomerIncome(int custId, double income) {
+		String sql ="update customer set custincome = ? where custid=?";
+		GetConnection gc = new GetConnection(); 
+		try {
+			gc.ps1 = GetConnection.getOracleConnection().prepareStatement(sql); 
+			gc.ps1.setDouble(1, income);
+			gc.ps1.setInt(2, custId); 
+			return gc.ps1.executeUpdate()>0;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} 
+		
+		return false;
+	}
+
+	@Override
+	public Customer getCustomer(int custId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Customer> getAllCustomers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean updateCustomerIncomeAndEmail(int custId, String email) {
+		String sql ="update customer set custemail =?, custincome = custincome + (custincome *0.1) where custid = ?"; 
+		return false;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+package com.training.selenium.works;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+public class GoogleTest {
+
+	String baseUrl = "https://www.google.com/"; 
+	WebDriver driver = null; 
+	
+	@Before
+	public void setUp() {}
+	
+	@After
+	public void tearDown() {}
+	
+	@Test
+	public void googleTest() {
+		
+	}
+
+}
